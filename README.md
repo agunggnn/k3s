@@ -242,7 +242,7 @@
     entryPoints:
       - web
     routes:
-      - match: Host(`k3s.games.shopee.io`) && PathPrefix(`/longhorn`)
+      - match: Host(`k3s.local`) && PathPrefix(`/longhorn`)
         kind: Rule
         services:
           - name: longhorn-int-svc
